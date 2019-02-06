@@ -2,7 +2,7 @@ package sk.gasparv;
 
 import java.util.List;
 
-public class Pizza {
+public class Pizza extends Jedlo {
     public Pizza(Korpus korpus, Zaklad zaklad, List<Ingrediencia> ingrediencie, boolean jeUpecena, boolean bolaZohrievana, int teplota){
         this.korpus = korpus;
         this.zaklad = zaklad;
