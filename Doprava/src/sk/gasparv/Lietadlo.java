@@ -1,6 +1,12 @@
 package sk.gasparv;
 
 public class Lietadlo extends DopravnyProstriedok implements IPohybovatelny {
+    private int aktualnaRychlost = 0;
+
+    public int getAktualnaRychlost() {
+        return aktualnaRychlost;
+    }
+
     @Override
     public void dopredu() {
         System.out.println("Paky na zrychlovanie su v polohe 0");
@@ -13,7 +19,9 @@ public class Lietadlo extends DopravnyProstriedok implements IPohybovatelny {
 
     @Override
     public void zrychli() {
+
         System.out.println("Pilot posuva paky na zrychlenie smerom dopredu pre vybrane motory");
+        aktualnaRychlost += 10;
     }
 
     @Override

@@ -3,7 +3,7 @@ package sk.gasparv;
 public class Autobus extends DopravnyProstriedok implements IPohybovatelny {
     @Override
     public void dopredu() {
-        
+
     }
 
     @Override
